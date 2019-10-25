@@ -1,0 +1,6 @@
+.DS_Store
+tmp
+.coverage
+__pycache__
+*.pyc
+node_modules

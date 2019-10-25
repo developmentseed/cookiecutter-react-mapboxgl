@@ -1,0 +1,24 @@
+{
+  "name": "cookiecutter-browserify-react-mapboxgl",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developmentseed/cookiecutter-browserify-react-mapboxgl.git"
+  },
+  "keywords": [
+    "cookiecutter",
+    "react",
+    "browserify",
+    "mapboxgl"
+  ],
+  "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developmentseed/cookiecutter-browserify-react-mapboxgl/issues"
+  },
+  "homepage": "https://github.com/developmentseed/cookiecutter-browserify-react-mapboxgl#readme",
+  "devDependencies": {}
+}
