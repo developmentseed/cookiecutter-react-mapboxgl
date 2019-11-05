@@ -1,0 +1,20 @@
+@import "mapbox-gl";
+
+/*
+° This file is only for css dependencies and a handful of base styles.
+* Most new styles should be introduced via styled-components, not this file.
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+}

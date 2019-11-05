@@ -5,3 +5,4 @@ tmp
 .env
 *.env
 !.env.example
+bundle.js

@@ -5,13 +5,29 @@
   "main": "src/index.js",
   "scripts": {
     "deps": "npm-check",
-    "lint:standard": "devseed-standard",
-    "lint:prettier": "prettier --check src/*/**.js",
-    "lint": "npm-run-all lint:standard lint:prettier",
+    "lint": "devseed-standard",
+    "format:eslint": "devseed-standard --fix",
     "format:prettier": "prettier --write src/*/**.js --only-changed",
-    "format:standard": "devseed-standard --fix",
-    "format": "npm-run-all format:prettier format:lintfix",
-    "test": "jest"
+    "format": "npm-run-all format:prettier format:eslint",
+    "test": "jest",
+    "bundle:css": "csskit src/base-styles.css -o public/bundle.css -m",
+    "bundle:js": "cross-env NODE_ENV=production browserify src/index.js -p @sethvincent/tinyify -o public/bundle.js",
+    "bundle": "npm-run-all --parallel bundle:css bundle:js",
+    "start:server": "budo src/index.js:bundle.js -d public --pushstate -- -t @sethvincent/dotenvify -p livereactload",
+    "start": "npm-run-all bundle:css start:server"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+          ]
+        }
+      ]
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,10 +42,27 @@
   "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com)",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@sethvincent/dotenvify": "^1.0.3",
+    "@sethvincent/tinyify": "github:sethvincent/tinyify",
+    "babelify": "^10.0.0",
+    "budo": "^11.6.3",
+    "cross-env": "^6.0.3",
+    "csskit": "^3.0.2",
     "devseed-standard": "^1.1.0",
     "jest": "^24.9.0",
+    "livereactload": "^3.5.0",
     "npm-check": "^5.9.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "directory-command": "^4.3.0",
+    "mapbox-gl": "^1.5.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.4.0"
   }
 }
