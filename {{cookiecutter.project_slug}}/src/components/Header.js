@@ -5,7 +5,7 @@ const HeaderContainer = styled.header`
   padding: 1em;
 `
 
-export default function Header ({ siteName }) {
+export default function Header({ siteName }) {
   return (
     <HeaderContainer>
       <h1>🌱 {siteName}</h1>

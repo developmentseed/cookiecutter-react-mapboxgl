@@ -2,4 +2,4 @@
 
 Our testing setup uses jest.
 
-Run tests with `npm test`.
+Run tests with `yarn test`.

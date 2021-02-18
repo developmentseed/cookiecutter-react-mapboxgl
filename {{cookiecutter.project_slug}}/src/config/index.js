@@ -4,5 +4,5 @@ if (!process.env.MAPBOX_ACCESS_TOKEN) {
 
 export default {
   siteName: process.env.SITE_NAME,
-  mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN
+  mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
 }

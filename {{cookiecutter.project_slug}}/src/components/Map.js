@@ -15,7 +15,7 @@ export default function Map() {
       container: ref.current,
       style: 'mapbox://styles/mapbox/streets-v11',
       zoom: 3,
-      center: [0, 0]
+      center: [0, 0],
     })
 
     m.on('load', () => {
@@ -40,7 +40,7 @@ export default function Map() {
         children &&
         React.Children.map(children, (child) =>
           React.cloneElement(child, {
-            map
+            map,
           })
         )}
     </MapContainer>

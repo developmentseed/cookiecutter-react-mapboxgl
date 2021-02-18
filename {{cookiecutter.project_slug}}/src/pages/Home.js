@@ -9,7 +9,7 @@ const PageContainer = styled.div`
   overflow: hidden;
 `
 
-export default function Home ({ config }) {
+export default function Home({ config }) {
   return (
     <PageContainer>
       <Header siteName={config.siteName} />
