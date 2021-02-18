@@ -7,6 +7,8 @@ context('Navigation', () => {
     cy.visit('/')
   })
 
+  // These are examples and currently skipped. Use with your own project routes!
+
   it.skip('clicking the nav menu items leads to the respective pages', () => {
     cy.get('[data-cy=link-explore]').click()
     cy.location('pathname').should('include', 'explore')

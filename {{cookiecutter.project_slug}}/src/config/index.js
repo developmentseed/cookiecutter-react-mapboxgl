@@ -1,3 +1,5 @@
+import theme from './theme'
+
 if (!process.env.MAPBOX_ACCESS_TOKEN) {
   throw new Error('MAPBOX_ACCESS_TOKEN env var is required')
 }
@@ -5,4 +7,5 @@ if (!process.env.MAPBOX_ACCESS_TOKEN) {
 export default {
   siteName: process.env.SITE_NAME,
   mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+  theme,
 }

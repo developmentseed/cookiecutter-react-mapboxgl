@@ -1,19 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
+import PageLayout from '../components/PageLayout'
 import Header from '../components/Header'
 import Map from '../components/Map'
 
-const PageContainer = styled.div`
-  height: 100%;
-  overflow: hidden;
-`
-
-export default function Home({ config }) {
+export default function Home({ siteName, theme }) {
   return (
-    <PageContainer>
-      <Header siteName={config.siteName} />
+    <PageLayout theme={theme}>
+      <Header siteName={siteName} />
       <Map />
-    </PageContainer>
+    </PageLayout>
   )
+}
+
+Home.propTypes = {
+  siteName: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
 }
