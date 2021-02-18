@@ -1,24 +1,27 @@
 {
-  "name": "cookiecutter-browserify-react-mapboxgl",
+  "name": "cookiecutter-parcel-react-mapboxgl",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/developmentseed/cookiecutter-browserify-react-mapboxgl.git"
+    "url": "git+https://github.com/developmentseed/cookiecutter-parcel-react-mapboxgl.git"
   },
   "keywords": [
     "cookiecutter",
     "react",
-    "browserify",
+    "parcel",
     "mapboxgl"
   ],
   "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com)",
+  "contributors": [
+    "alice ruehl <alice.ruehl@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/developmentseed/cookiecutter-browserify-react-mapboxgl/issues"
+    "url": "https://github.com/developmentseed/cookiecutter-parcel-react-mapboxgl/issues"
   },
-  "homepage": "https://github.com/developmentseed/cookiecutter-browserify-react-mapboxgl#readme",
+  "homepage": "https://github.com/developmentseed/cookiecutter-parcel-react-mapboxgl#readme",
   "devDependencies": {}
 }

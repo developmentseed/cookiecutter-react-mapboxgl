@@ -2,4 +2,4 @@
 import os
 
 os.system('cp .env.example .env')
-os.system('npm install')
+os.system('yarn install')

@@ -1,5 +1,4 @@
-@import "mapbox-gl";
-
+@import 'mapbox-gl/dist/mapbox-gl.css';
 /*
 ° This file is only for css dependencies and a handful of base styles.
 * Most new styles should be introduced via styled-components, not this file.

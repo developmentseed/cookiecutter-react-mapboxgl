@@ -1,18 +1,18 @@
-# cookiecutter-browserify-react-mapboxgl
+# cookiecutter-parcel-react-mapboxgl
 
-Create a web UI with browserify, react, and mapboxgl.
+Create a web UI with parcel, react, and mapboxgl.
 
 ## Requirements
 
-Install the `cookiecutter` command line tool: `pip install cookiecutter`    
+Install the `cookiecutter` command line tool: `brew install cookiecutter`
 
 ## Usage
 
-Generate a new project using this template: 
+Generate a new project using this template:
 
 ```
-cookiecutter gh:developmentseed/cookiecutter-browserify-react-mapboxgl
-```    
+cookiecutter gh:developmentseed/cookiecutter-parcel-react-mapboxgl
+```
 
 ## License
 

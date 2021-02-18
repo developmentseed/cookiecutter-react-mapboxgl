@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:8000/",
+  "integrationFolder": "test/cypress/integration",
+  "pluginsFile": "test/cypress/plugins/index.js",
+  "supportFile": "test/cypress/support/index.js",
+  "fixturesFolder": "test/__fixtures__",
+  "screenshotsFolder": "test/cypress/screenshots",
+  "videosFolder": "test/cypress/videos",
+  "experimentalFetchPolyfill": true
+}

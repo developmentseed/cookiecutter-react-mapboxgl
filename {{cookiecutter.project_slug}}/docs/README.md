@@ -18,8 +18,8 @@ In many of the directories of the application we also provide contextual informa
 
 See the README.md files in the following directories:
 
-- [__tests__](../__tests__)
 - [src](../src/)
   - [components](../components/)
   - [lib](../lib/)
   - [pages](../pages/)
+- [test](../test)

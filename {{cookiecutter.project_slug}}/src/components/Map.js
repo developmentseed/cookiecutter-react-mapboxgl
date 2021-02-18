@@ -6,7 +6,7 @@ const MapContainer = styled.div`
   height: 100%;
 `
 
-export default function Map () {
+export default function Map() {
   const ref = React.createRef()
   const [map, setMap] = useState(null)
 
@@ -14,11 +14,18 @@ export default function Map () {
     const m = new mapbox.Map({
       container: ref.current,
       style: 'mapbox://styles/mapbox/streets-v11',
-      zoom: 15,
-      center: [-90.2002909, 38.6336407]
+      zoom: 3,
+      center: [0, 0]
     })
 
-    setMap(m)
+    m.on('load', () => {
+      setMap(m)
+
+      if (process.env.NODE_ENV === 'development') {
+        // makes map accessible in console for debugging
+        window.map = m
+      }
+    })
 
     return () => {
       if (map) {
@@ -27,5 +34,15 @@ export default function Map () {
     }
   }, [])
 
-  return <MapContainer id='map' ref={ref} />
+  return (
+    <MapContainer id='map' ref={ref}>
+      {map &&
+        children &&
+        React.Children.map(children, (child) =>
+          React.cloneElement(child, {
+            map
+          })
+        )}
+    </MapContainer>
+  )
 }
