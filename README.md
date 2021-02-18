@@ -1,4 +1,4 @@
-# cookiecutter-parcel-react-mapboxgl
+# cookiecutter-react-mapboxgl
 
 Create a web UI with parcel, react, and mapboxgl.
 
