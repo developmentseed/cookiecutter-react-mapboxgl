@@ -11,7 +11,7 @@ Install the `cookiecutter` command line tool: `brew install cookiecutter`
 Generate a new project using this template:
 
 ```
-cookiecutter gh:developmentseed/cookiecutter-parcel-react-mapboxgl
+cookiecutter gh:developmentseed/cookiecutter-parcel-react-mapboxgl#parcel
 ```
 
 ## License
