@@ -5,9 +5,9 @@
 ## Background
 
 TODO: describe:
-  - what is this project
-  - who is it for
-  - what problems does it solve
+- what is this project
+- who is it for
+- what problems does it solve
 
 ## Install
 

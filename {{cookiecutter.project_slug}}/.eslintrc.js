@@ -5,28 +5,28 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:cypress/recommended',
-    'plugin:jest/recommended'
+    'plugin:jest/recommended',
   ],
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   env: {
     browser: true,
     node: true,
-    es6: true
+    es6: true,
   },
   plugins: ['react', 'react-hooks', 'inclusive-language'],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module' // Allows for the use of imports
+    sourceType: 'module', // Allows for the use of imports
   },
   rules: {
-    'inclusive-language/use-inclusive-words': 'error'
+    'inclusive-language/use-inclusive-words': 'error',
   },
   overrides: [
     {
@@ -47,8 +47,8 @@ module.exports = {
         'jest/no-try-expect': 'off',
         'jest/valid-describe': 'off',
         'jest/valid-expect': 'off',
-        'jest/valid-expect-in-promise': 'off'
-      }
-    }
-  ]
+        'jest/valid-expect-in-promise': 'off',
+      },
+    },
+  ],
 }
