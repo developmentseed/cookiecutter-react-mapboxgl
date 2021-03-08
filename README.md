@@ -11,7 +11,7 @@ Install the `cookiecutter` command line tool: `pip install cookiecutter`
 Generate a new project using this template: 
 
 ```
-cookiecutter gh:developmentseed/cookiecutter-browserify-react-mapboxgl
+cookiecutter gh:developmentseed/cookiecutter-browserify-react-mapboxgl --checkout browserify
 ```    
 
 ## License
