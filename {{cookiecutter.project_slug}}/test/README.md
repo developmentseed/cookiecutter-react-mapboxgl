@@ -1,5 +1,5 @@
 # Tests
 
-Our testing setup uses jest.
+Our testing setup uses both jest and cypress.
 
-Run tests with `yarn test`.
+Run unit tests with `yarn test` (or `yarn tdd` in watch mode) and the cypress end to end test suite with `cy:open`.
