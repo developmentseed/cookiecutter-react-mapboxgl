@@ -10,7 +10,7 @@ export default function App() {
     <BrowserRouter>
       <Switch>
         <Route path='/'>
-          <Home config={config} />
+          <Home siteName={config.siteName} theme={config.theme} />
         </Route>
       </Switch>
     </BrowserRouter>
