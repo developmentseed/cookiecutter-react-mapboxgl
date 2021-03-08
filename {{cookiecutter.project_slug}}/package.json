@@ -24,9 +24,7 @@
   "bugs": {
     "url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/issues"
   },
-  "homepage": {
-    "url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
-  },
+  "homepage": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
   "author": "{{ cookiecutter.github_username }}",
   "license": "MIT",
   "devDependencies": {

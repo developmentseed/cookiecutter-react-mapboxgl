@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 import mapbox from 'mapbox-gl'
 import styled from 'styled-components'
 
@@ -6,7 +7,7 @@ const MapContainer = styled.div`
   height: 100%;
 `
 
-export default function Map() {
+export default function Map({ children }) {
   const ref = React.createRef()
   const [map, setMap] = useState(null)
 
@@ -45,4 +46,11 @@ export default function Map() {
         )}
     </MapContainer>
   )
+}
+
+Map.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]),
 }
