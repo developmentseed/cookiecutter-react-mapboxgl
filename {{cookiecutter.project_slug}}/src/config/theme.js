@@ -1,19 +1,19 @@
-export default {
-  colors: {
-    primary: '#304CA2',
-    highlight: '#F98E08',
-    background: '#FFFFFF',
-    text: '#373E49',
-  },
-  fonts: {
-    body: 'Open Sans, sans-serif',
-    heading: 'Open Sans, sans-serif',
-  },
-  fontSizes: [10, 12, 14, 16, 32, 52],
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700,
-  },
-  space: [0, 4, 8, 16, 32, 70],
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export function themeOverrides(uiTheme) {
+  const baseColor = '#2C3E50'
+
+  return defaultsDeep(
+    {
+      color: {
+        base: baseColor,
+        baseDark: baseColor,
+        primary: '#2276ac',
+        secondary: '#17557c',
+        link: '#2276ac',
+      },
+    },
+    uiTheme
+  )
 }
+

@@ -5,9 +5,9 @@ import PageLayout from '../components/PageLayout'
 import Header from '../components/Header'
 import Map from '../components/Map'
 
-export default function Home({ siteName, theme }) {
+export default function Home({ siteName }) {
   return (
-    <PageLayout theme={theme}>
+    <PageLayout>
       <Header siteName={siteName} />
       <Map />
     </PageLayout>
@@ -16,5 +16,4 @@ export default function Home({ siteName, theme }) {
 
 Home.propTypes = {
   siteName: PropTypes.string.isRequired,
-  theme: PropTypes.object.isRequired,
 }
