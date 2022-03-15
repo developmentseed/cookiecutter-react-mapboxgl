@@ -11,6 +11,14 @@ TODO: describe:
 
 ## Install
 
+```sh
+$ yarn install
+```
+
+```sh
+$ yarn develop
+```
+
 TODO: describe installation instructions
 
 ## Documentation

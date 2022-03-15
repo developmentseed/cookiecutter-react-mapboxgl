@@ -32,6 +32,7 @@
     "@babel/preset-react": "^7.12.1",
     "axe-core": "^4.0.2",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
     "cypress": "^6.5.0",
     "cypress-axe": "0.12.1",
     "eslint": "^7.12.1",
@@ -50,6 +51,15 @@
     "prettier": "^2.1.2"
   },
   "dependencies": {
+    "@devseed-ui/button": "^3.0.2",
+    "@devseed-ui/collecticons": "^3.0.0",
+    "@devseed-ui/dropdown": "^2.0.2",
+    "@devseed-ui/form": "^1.0.3",
+    "@devseed-ui/global-loading": "^2.0.1",
+    "@devseed-ui/theme-provider": "^3.0.0",
+    "@devseed-ui/toolbar": "^2.1.0",
+    "@devseed-ui/typography": "^1.0.0",
+    "lodash.defaultsdeep": "^4.6.1",
     "mapbox-gl": "^1.13.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
